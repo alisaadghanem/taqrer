@@ -11,7 +11,11 @@
               grow, and get hired.
             </p>
           </div>
-          <img src="/images/icons.png" alt="Description Image" class="footer-image" />
+          <img
+            src="/images/icons.png"
+            alt="Description Image"
+            class="footer-image"
+          />
         </div>
       </div>
 
@@ -19,7 +23,9 @@
       <div class="col-xs-13 col-md-10">
         <div class="footer-sections row">
           <div class="footer-column">
-            <q-toolbar-title class="footer-title">For Designers</q-toolbar-title>
+            <q-toolbar-title class="footer-title"
+              >For Designers</q-toolbar-title
+            >
             <div class="footer-content">
               <p>Go pro!</p>
               <p>Explore design work</p>
@@ -28,7 +34,9 @@
           </div>
 
           <div class="footer-column">
-            <q-toolbar-title class="footer-title">Hire Designers</q-toolbar-title>
+            <q-toolbar-title class="footer-title"
+              >Hire Designers</q-toolbar-title
+            >
             <div class="footer-content">
               <p>Post a job opening</p>
               <p>Post a freelance project</p>
@@ -59,7 +67,9 @@
           </div>
 
           <div class="footer-column">
-            <q-toolbar-title class="footer-title">Design Resources</q-toolbar-title>
+            <q-toolbar-title class="footer-title"
+              >Design Resources</q-toolbar-title
+            >
             <div class="footer-content">
               <p>Freelancing</p>
               <p>Design Hiring</p>

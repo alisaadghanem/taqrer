@@ -250,8 +250,8 @@ const dropdownStyle = {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-  grid-template-rows: repeat(3, auto); /* 3 cards per column */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
   grid-gap: 30px;
   padding-top: 30px;
 }
@@ -341,7 +341,7 @@ const dropdownStyle = {
   }
   .projects-grid {
     grid-template-columns: repeat(auto-fill, minmax(393px, 1fr));
-    grid-template-rows: none; /* Reset rows for smaller screens */
+    grid-template-rows: none;
   }
 }
 
