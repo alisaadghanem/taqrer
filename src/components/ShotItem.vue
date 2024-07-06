@@ -36,6 +36,7 @@
           :options="sortOptions"
           dense
           outlined
+          rounded
           class="custom-dropdown"
           :style="dropdownStyle"
         />
