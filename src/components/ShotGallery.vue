@@ -67,9 +67,11 @@ function toggleFollow() {
   isFollowing.value = !isFollowing.value;
 }
 
-const shotGalleryPicSrc = "../../public/images/profilepic.jpeg";
-const logos = "../../public/images/logos.png";
-const bannerSrc = "../../public/images//bannerpic.png";
+// Import images directly
+import shotGalleryPicSrc from "../../public/images/profilepic.jpeg";
+import logos from "../../public/images/logos.png";
+import bannerSrc from "../../public/images/bannerpic.png";
+
 </script>
 
 <style scoped>
