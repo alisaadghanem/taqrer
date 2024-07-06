@@ -23,10 +23,7 @@
             :name="tab"
             class="tab-item"
           >
-            <span class="tab-text"
-              >{{ tab }}
-              <span class="tab-number">{{ tabCounts[index] }}</span></span
-            >
+            <span class="tab-text">{{ tab }} <span class="tab-number">{{ tabCounts[index] }}</span></span>
           </q-tab>
         </q-tabs>
       </div>
@@ -43,19 +40,21 @@
       </div>
     </div>
     <div class="projects-grid">
-      <q-card
-        v-for="project in filteredProjects"
-        :key="project.id"
-        class="project-card"
-      >
-        <q-card-section>
-          <img
-            :src="project.image"
-            :alt="project.title"
-            class="project-image"
-          />
-        </q-card-section>
-      </q-card>
+      <transition-group name="fade-in">
+        <q-card
+          v-for="project in filteredProjects"
+          :key="project.id"
+          class="project-card"
+        >
+          <q-card-section>
+            <img
+              :src="project.image"
+              :alt="project.title"
+              class="project-image"
+            />
+          </q-card-section>
+        </q-card>
+      </transition-group>
     </div>
   </div>
 </template>
@@ -279,6 +278,16 @@ const dropdownStyle = {
 
 .custom-dropdown .q-field__control {
   border-radius: 10px !important;
+}
+
+.fade-in-enter-active {
+  transition: opacity 0.5s;
+}
+.fade-in-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-in-enter, .fade-in-leave-to /* .fade-in-leave-active in <2.1.8 */ {
+  opacity: 0;
 }
 
 /* Media Queries for responsiveness */
