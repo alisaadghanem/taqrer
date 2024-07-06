@@ -144,25 +144,26 @@ import bannerSrc from "../../public/images/bannerpic.png";
 
 .shotGallery-buttons {
   display: flex;
-  gap: 10px;
+  gap: 15 px;
 }
 
 .shotGallery-btn {
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
+  width: 131px;
+  height: 53px;
+  padding: 15px 20px;
+  border-radius: 12px;
+  background: #f3f3f4;
+  color: #333;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 10px 20px;
-  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .follow-btn {
   background-color: #f3f3f4;
   color: #333;
+  margin-right: 8px;
 }
 
 .hire-me-btn {
