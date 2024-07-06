@@ -289,7 +289,8 @@ const dropdownStyle = {
 .fade-in-leave-active {
   transition: opacity 0.5s;
 }
-.fade-in-enter, .fade-in-leave-to /* .fade-in-leave-active in <2.1.8 */ {
+.fade-in-enter,
+.fade-in-leave-to {
   opacity: 0;
 }
 
