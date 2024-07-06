@@ -134,7 +134,7 @@ const projects = ref([
     title: "Project 6",
     description: "Description 6",
     image: img6,
-    type: "Work",
+    type: "Collections",
   },
   {
     id: 7,
