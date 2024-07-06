@@ -23,7 +23,10 @@
             :name="tab"
             class="tab-item"
           >
-            <span class="tab-text">{{ tab }} <span class="tab-number">{{ tabCounts[index] }}</span></span>
+            <span class="tab-text"
+              >{{ tab }}
+              <span class="tab-number">{{ tabCounts[index] }}</span></span
+            >
           </q-tab>
         </q-tabs>
       </div>
