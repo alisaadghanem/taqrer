@@ -284,6 +284,10 @@ const dropdownStyle = {
 /* Media Queries for responsiveness */
 
 @media (max-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
   .header {
     flex-direction: column;
     align-items: flex-start;
@@ -317,13 +321,16 @@ const dropdownStyle = {
 }
 
 @media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
   .shot-item {
     padding: 0px 20px 0px 20px;
   }
   .header {
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 270px;
+    margin-top: 160px;
     height: 300px;
   }
   .tabs-container,
@@ -339,6 +346,9 @@ const dropdownStyle = {
 }
 
 @media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
   .searchBoxStyle {
     width: 100%;
   }
