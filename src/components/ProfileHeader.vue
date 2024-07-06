@@ -97,7 +97,7 @@
 
 <script setup>
 import { ref } from "vue";
-import profilePic from "src/assets/profilepic.jpeg";
+import profilePic from "../../public/images/profilepic.jpeg";
 
 const drawer = ref(false);
 

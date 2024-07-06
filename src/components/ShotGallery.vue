@@ -67,9 +67,9 @@ function toggleFollow() {
   isFollowing.value = !isFollowing.value;
 }
 
-const shotGalleryPicSrc = "src/assets/profilepic.jpeg";
-const logos = "src/assets/logos.png";
-const bannerSrc = "src/assets/banner.png";
+const shotGalleryPicSrc = "public/images/profilepic.jpeg";
+const logos = "public/images/logos.png";
+const bannerSrc = "public/images//bannerpic.png";
 </script>
 
 <style scoped>

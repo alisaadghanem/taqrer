@@ -71,6 +71,19 @@ import {
   QCardSection,
 } from "quasar";
 
+import img1 from "../../public/images/1.png";
+import img2 from "../../public/images/2.png";
+import img3 from "../../public/images/3.png";
+import img4 from "../../public/images/4.png";
+import img5 from "../../public/images/5.png";
+import img6 from "../../public/images/6.png";
+import img7 from "../../public/images/7.png";
+import img8 from "../../public/images/8.png";
+import img9 from "../../public/images/9.png";
+import img10 from "../../public/images/10.png";
+import img11 from "../../public/images/11.png";
+import img12 from "../../public/images/12.png";
+
 const searchQuery = ref("");
 const selectedTab = ref("All");
 const selectedSort = ref("Recent");
@@ -82,84 +95,84 @@ const projects = ref([
     id: 1,
     title: "Project 1",
     description: "Description 1",
-    image: "src/assets/1.png",
+    image: img1,
     type: "Work",
   },
   {
     id: 2,
     title: "Project 2",
     description: "Description 2",
-    image: "src/assets/2.png",
+    image: img2,
     type: "Projects",
   },
   {
     id: 3,
     title: "Project 3",
     description: "Description 3",
-    image: "src/assets/3.png",
+    image: img3,
     type: "Work",
   },
   {
     id: 4,
     title: "Project 4",
     description: "Description 4",
-    image: "src/assets/4.png",
+    image: img4,
     type: "Projects",
   },
   {
     id: 5,
     title: "Project 5",
     description: "Description 5",
-    image: "src/assets/5.png",
+    image: img5,
     type: "Collections",
   },
   {
     id: 6,
     title: "Project 6",
     description: "Description 6",
-    image: "src/assets/6.png",
+    image: img6,
     type: "Work",
   },
   {
     id: 7,
     title: "Project 7",
     description: "Description 7",
-    image: "src/assets/7.png",
+    image: img7,
     type: "Projects",
   },
   {
     id: 8,
     title: "Project 8",
     description: "Description 8",
-    image: "src/assets/8.png",
+    image: img8,
     type: "Work",
   },
   {
     id: 9,
     title: "Project 9",
     description: "Description 9",
-    image: "src/assets/9.png",
+    image: img9,
     type: "Work",
   },
   {
     id: 10,
     title: "Project 10",
     description: "Description 10",
-    image: "src/assets/10.png",
+    image: img10,
     type: "Projects",
   },
   {
     id: 11,
     title: "Project 11",
     description: "Description 11",
-    image: "src/assets/11.png",
+    image: img11,
     type: "Projects",
   },
   {
     id: 12,
     title: "Project 12",
     description: "Description 12",
-    image: "src/assets/12.png",
+    image: img12,
     type: "Work",
   },
 ]);
@@ -246,7 +259,6 @@ const dropdownStyle = {
   width: 100%;
   height: 299px;
   border-radius: 14px;
-
 }
 
 .project-image {
@@ -301,8 +313,6 @@ const dropdownStyle = {
     border-radius: 14px;
     object-fit: cover;
   }
-
-
 }
 
 @media (max-width: 768px) {

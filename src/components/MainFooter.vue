@@ -11,21 +11,15 @@
               grow, and get hired.
             </p>
           </div>
-          <img
-            src="src/assets/icons.png"
-            alt="Description Image"
-            class="footer-image"
-          />
+          <img src="/images/icons.png" alt="Description Image" class="footer-image" />
         </div>
       </div>
 
       <!-- Sections Column -->
-      <div class="col-xs-13 col-md-10 ">
-        <div class="footer-sections row ">
+      <div class="col-xs-13 col-md-10">
+        <div class="footer-sections row">
           <div class="footer-column">
-            <q-toolbar-title class="footer-title"
-              >For Designers</q-toolbar-title
-            >
+            <q-toolbar-title class="footer-title">For Designers</q-toolbar-title>
             <div class="footer-content">
               <p>Go pro!</p>
               <p>Explore design work</p>
@@ -34,9 +28,7 @@
           </div>
 
           <div class="footer-column">
-            <q-toolbar-title class="footer-title"
-              >Hire Designers</q-toolbar-title
-            >
+            <q-toolbar-title class="footer-title">Hire Designers</q-toolbar-title>
             <div class="footer-content">
               <p>Post a job opening</p>
               <p>Post a freelance project</p>
@@ -60,23 +52,21 @@
             <div class="footer-content">
               <p>Design jobs</p>
               <p>Designers for hire</p>
-              <p>Freelance designers <br />for hire</p>
+              <p>Freelance designers<br />for hire</p>
               <p>Tags</p>
               <p>Places</p>
             </div>
           </div>
 
           <div class="footer-column">
-            <q-toolbar-title class="footer-title"
-              >Design Resources</q-toolbar-title
-            >
+            <q-toolbar-title class="footer-title">Design Resources</q-toolbar-title>
             <div class="footer-content">
               <p>Freelancing</p>
               <p>Design Hiring</p>
               <p>Design Portfolio</p>
               <p>Design Education</p>
               <p>Creative Process</p>
-              <p>Design Industry <br />Trends</p>
+              <p>Design Industry<br />Trends</p>
             </div>
           </div>
         </div>
@@ -96,6 +86,14 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {};
+  },
+};
+</script>
 
 <style scoped>
 .bg-white {
