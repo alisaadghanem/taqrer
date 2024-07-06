@@ -236,19 +236,21 @@ const dropdownStyle = {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(393px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  grid-template-rows: repeat(3, auto); /* 3 cards per column */
   grid-gap: 30px;
   padding-top: 30px;
 }
 
 .project-card {
-  width: 393px;
+  width: 100%;
   height: 299px;
   border-radius: 14px;
+
 }
 
 .project-image {
-  width: 393px;
+  width: 100%;
   height: 299px;
   border-radius: 14px;
   object-fit: cover;
@@ -299,6 +301,8 @@ const dropdownStyle = {
     border-radius: 14px;
     object-fit: cover;
   }
+
+
 }
 
 @media (max-width: 768px) {
@@ -316,6 +320,10 @@ const dropdownStyle = {
   .dropdown {
     width: 100%;
     margin-top: 20px;
+  }
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(393px, 1fr));
+    grid-template-rows: none; /* Reset rows for smaller screens */
   }
 }
 

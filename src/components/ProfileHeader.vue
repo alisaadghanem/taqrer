@@ -13,7 +13,7 @@
         icon="menu"
         @click="drawer = !drawer"
         aria-label="Toggle navigation drawer"
-        v-if="$q.screen.lt.sm"
+        v-if="$q.screen.lt.md"
       />
 
       <!-- Navigation Links (in Drawer) -->
@@ -24,49 +24,6 @@
         side="left"
         content-class="bg-white"
       >
-        <q-item>
-          <q-item-section avatar>
-            <q-avatar
-              square
-              style="border-radius: 50%; width: 45px; height: 45px"
-              class="q-ml-md"
-            >
-              <img :src="profilePic" alt="Profile Picture" />
-            </q-avatar>
-          </q-item-section>
-          <q-item-section>
-            <q-btn
-              class="upload-button q-ml-md"
-              no-caps
-              style="
-                min-width: 105px;
-                height: 45px;
-                border-radius: 12px;
-                background-color: #9747ff;
-                color: white;
-                font-family: 'Inter', sans-serif;
-                font-size: 14px;
-                font-weight: 500;
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              "
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-                style="width: 18px; height: 18px; margin-right: 4px"
-              >
-                <path
-                  d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3 192 320c0 17.7 14.3 32 32 32s32-14.3 32-32l0-210.7 73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 64c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 64c0 17.7-14.3 32-32 32L96 448c-17.7 0-32-14.3-32-32l0-64z"
-                  fill="white"
-                />
-              </svg>
-              <span>Upload</span>
-            </q-btn>
-          </q-item-section>
-        </q-item>
         <q-list link inset-delimiter>
           <q-item v-for="item in navItems" :key="item.name" clickable>
             <q-item-section>
@@ -160,6 +117,7 @@ const navItems = [
   font-weight: 400;
   line-height: 70.24px;
   text-align: left;
+  margin-right: auto;
 }
 
 .bg-white {
@@ -183,6 +141,12 @@ const navItems = [
   .q-avatar {
     width: 35px;
     height: 35px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 960px) {
+  .logo {
+    margin-right: auto;
   }
 }
 </style>

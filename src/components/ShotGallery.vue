@@ -19,7 +19,7 @@
       </div>
       <div class="shotGallery-buttons">
         <q-btn
-          class="shotGallery-btn"
+          class="shotGallery-btn follow-btn"
           :style="{
             backgroundColor: isFollowing ? '#9747FF' : '#f3f3f4',
             color: isFollowing ? 'white' : '#333',
@@ -38,7 +38,7 @@
           </svg>
           {{ isFollowing ? "Unfollow" : "Follow" }}
         </q-btn>
-        <q-btn class="shotGallery-btn">
+        <q-btn class="shotGallery-btn hire-me-btn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 640 512"
@@ -87,7 +87,7 @@ const bannerSrc = "src/assets/banner.png";
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 5px;
+  gap: 20px;
 }
 
 .shotGallery-pic {
@@ -99,12 +99,12 @@ const bannerSrc = "src/assets/banner.png";
 .shotGallery-info {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
 }
 
 .h1 {
   font-family: Inter, sans-serif;
-  font-size: 47px;
+  font-size: 48px;
   font-weight: 800;
   line-height: 1.3;
   text-align: left;
@@ -120,49 +120,10 @@ const bannerSrc = "src/assets/banner.png";
   margin-bottom: 0;
 }
 
-.shotGallery-buttons {
-  display: flex;
-  gap: 15px;
-}
-
-.shotGallery-btn {
-  width: 131px;
-  height: 53px;
-  padding: 15px 20px;
-  border-radius: 12px;
-  background: #f3f3f4;
-  color: #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.shotGallery-btn:hover {
-  background: #ddd;
-}
-
-.shotGallery-btn svg {
-  width: 17px;
-  height: 17px;
-  padding: 1.42px;
-  margin-right: 8px;
-  fill: currentColor;
-}
-
-.shotGallery-btn:last-of-type {
-  background: #9747ff;
-  color: white;
-}
-
-.shotGallery-btn:last-of-type:hover {
-  background: #7d36e1;
-}
-
 .team-logos {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 
 .shotGallery-subtitle {
@@ -171,24 +132,58 @@ const bannerSrc = "src/assets/banner.png";
   font-weight: 700;
   line-height: 1.2;
   text-align: left;
-  width: 97px;
-  height: 22px;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .logos-img {
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+}
+
+.shotGallery-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.shotGallery-btn {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.follow-btn {
+  background-color: #f3f3f4;
+  color: #333;
+}
+
+.hire-me-btn {
+  background-color: #9747ff;
+  color: white;
+}
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  margin-right: 5px;
 }
 
 .banner-right {
-  flex-shrink: 0;
+  width: 739px;
+  height: 554px;
 }
 
 .banner-img {
-  width: 739px;
-  height: 554px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 1200px) {

@@ -20,8 +20,8 @@
       </div>
 
       <!-- Sections Column -->
-      <div class="col-xs-12 col-md-10">
-        <div class="footer-sections row">
+      <div class="col-xs-13 col-md-10 ">
+        <div class="footer-sections row ">
           <div class="footer-column">
             <q-toolbar-title class="footer-title"
               >For Designers</q-toolbar-title
@@ -130,7 +130,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: 150px;
-  width: 950px;
+  width: 100%;
 }
 
 .footer-column {
@@ -181,7 +181,7 @@
   font-size: 14px;
   font-weight: 600;
   color: #000000;
-  margin-left: 900px;
+  margin-left: auto;
 }
 
 .flexible-text {
@@ -191,6 +191,20 @@
   line-height: 23.8px;
   text-align: left;
   opacity: 0.6;
+}
+
+@media (max-width: 1920px) {
+  .bg-white {
+    padding: 60px;
+  }
+
+  .footer-sections {
+    margin-left: 100px;
+  }
+
+  .footer-bottom .flexible-shots {
+    margin-left: 850px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -230,6 +244,7 @@
 
   .footer-column {
     flex: 1 1 100%;
+    margin-top: 20px;
   }
 }
 
